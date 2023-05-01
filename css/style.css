@@ -1,0 +1,371 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*.l_box {
+	display: flex;　横並び
+	justify-content: center;　左右中央揃え
+	align-items: center;　上下左右中央揃え
+	flex-direction: column;　縦並び
+*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.title_box {
+	background: url('../img/mainbg.png');
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	color: azure
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px 0;
+
+
+}
+
+.cheeseacademy {
+	font-size: 36px;
+	text-align: center;
+	margin: 50px 0;
+
+}
+
+.wrapper {
+	max-width: 960px;
+}
+
+/*header*/
+.header {
+	border: 1px solid #efefef;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+}
+
+.site-title {
+	width: 100%;
+	padding: 40px 10px 20px;
+}
+
+.nav-list {
+	font-size: 21px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+
+}
+
+.nav-item {
+	margin: 0 0 0 48px;
+}
+
+.nav-item>a {
+	color: #222222;
+	text-transform: uppercase;
+}
+
+/*about*/
+.profile {
+	padding: 120px 0 80px;
+}
+
+.profile__title {
+	margin: 0 0 24px;
+	font-weight: bold;
+	color: #ffd61a;
+}
+
+.profile__eyecatch {
+	margin: 0 0 64px;
+}
+
+.profile__name {
+	margin: 0 0 40px;
+}
+
+.profile__text {
+	margin: 0 0 80px;
+}
+
+.profile__text {
+	text-align: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.about-img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*course*/
+.box_title {
+	margin: 0 0 24px;
+	font-weight: bold;
+}
+
+.text-center {
+	text-align: center;
+	margin: 0 0 32px;
+
+}
+
+.box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid black;
+}
+
+.box_image {
+	width: 50%;
+}
+
+.box-item {
+	width: 50%;
+}
+
+.box_image img {
+	width: 100%;
+}
+
+
+
+
+.box_item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box_text {
+	font-size: 16px;
+}
+
+.box_text h3 {
+	margin: 0 10px 40px 10px;
+}
+
+.box_text p {
+	margin: 0 5px 0 5px;
+}
+
+/*NEWS*/
+.NEWS {
+	padding: 64px 24px 0;
+
+}
+
+.NEWS__title {
+	text-align: center;
+	font-size: 24px;
+	color: #222222;
+}
+
+.NEWS__list {
+	display: flex;
+	justify-content: center;
+	margin: 80px;
+}
+
+.NEWS__item {
+	width: 33.333%;
+}
+
+.NEWS__eyecatch {
+	margin: 0 0 0 16px;
+	font: #ffd61a;
+}
+
+.NEWS__contents {
+	margin: 32px 0 0 0;
+}
+
+.NEWS__contents h5 {
+	margin: 0 0 24px;
+	font-size: 14px;
+}
+
+.NEWS__contents p {
+	font-size: 14px;
+}
+
+/*.NEWS__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+/*ACCESS*/
+.ACCESS {
+	text-align: center;
+	margin: 0 0 80px;
+}
+
+.ACCESS__title {
+	text-align: center;
+	margin: 64px 0 0;
+	font-size: 24px;
+	color: #222222;
+}
+
+.ACCESS__title2 {
+	margin: 0 0 64px 0;
+}
+
+.ACCESS__contents1 {
+	margin: 24px 0 0 0;
+	display: flex;
+}
+
+.ACCESS__contents2 {
+	display: flex;
+}
+
+.ACCESS__contents3 {
+	display: flex;
+}
+
+.ACCESS__contents4 {
+	display: flex;
+}
+
+.ACCESS__contents5 {
+	display: flex;
+}
+
+.ACCESS__item {
+	width: 50%;
+	text-align: left;
+	padding: 0 0 0 25%;
+}
+
+.ACCESS__list {
+	width: 50%;
+	text-align: left;
+}
+
+
+/*CONTACT*/
+.CONTACT {
+	text-align: center;
+}
+
+.CONTACT h6 {
+	font-size: 24px;
+}
+
+.CONTACT_item {
+	margin: 16px 0 16px 0;
+}
+
+input,
+textarea {
+	border: 1px solid #bfbfbf;
+}
+
+
+dl {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+dl dt {
+	width: 40%;
+	text-align: left;
+	padding: 0 0 0 20%;
+}
+
+dl dd {
+	width: 60%;
+}
+
+.CONTACT_push {
+	display: inline-block;
+	background-color: #ffd61a;
+	color: white;
+	padding: 0 40% 0 40%;
+
+}
+
+/*footer*/
+.footer {
+	text-align: center;
+	background-color: #707070;
+	height: 80px;
+	padding: 32px 0 0;
+
+}
+
+.footer-title {
+	font-size: 16px;
+	color: white;
+
+
+}
+
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
